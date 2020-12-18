@@ -1,0 +1,12 @@
+name: Label By Base
+on: # rebuild any PRs and main branch changes
+  pull_request:
+
+jobs:
+  label:
+    runs-on: ubuntu-latest
+    steps:
+    - name: PR Label By Base
+      uses: nrccua-walter-manger/pr-label-by-base@v0.1-alpha
+      env:
+        REPO_ACCESS_TOKEN: ${{ secrets.REPO_ACCESS_TOKEN }}
