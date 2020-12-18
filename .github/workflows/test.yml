@@ -6,7 +6,7 @@ jobs:
   label:
     runs-on: ubuntu-latest
     steps:
-    - name: PR Label By Base
+    - name: PR Label By Base -Indeed
       uses: nrccua-walter-manger/pr-label-by-base@v0.1-alpha
       env:
         REPO_ACCESS_TOKEN: ${{ secrets.REPO_ACCESS_TOKEN }}
